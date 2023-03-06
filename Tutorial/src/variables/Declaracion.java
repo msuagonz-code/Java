@@ -44,6 +44,7 @@ public class Declaracion {
 	public static void main(String[] args) {
 
 		Declaracion obj = new Declaracion();
+		
 		int variable = 0; // Esta es una Variable Local
 		
 		propiedad_compartida = 0; // modificamos la propiedad compartida

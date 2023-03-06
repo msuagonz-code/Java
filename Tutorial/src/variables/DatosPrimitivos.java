@@ -67,11 +67,14 @@ public class DatosPrimitivos {
 		System.out.println("Esta es una comilla simple: "+ letra);
 		
 		// Los numeros representan el valor de una letra dentro del sistema Unicode 65,535 es máximo valor admitido
+		letra = 97;
+		System.out.println("Esta es la misma Letra: "+ letra);
 		System.out.println("Valor char minimo: "+(Character.MIN_VALUE+0));
 		System.out.println("Valor char maximo: "+(Character.MAX_VALUE+0));
 		
-		letra = 97;
-		System.out.println("Esta es la misma Letra: "+ letra);
+		// Char admite el código del caracter unicode 
+		letra ='\u0061';
+		System.out.println("Esta es la misma Letra en Unicode: "+ letra);
 	}
 
 }
