@@ -1,12 +1,14 @@
 package variables;
 
+/* 
+ * https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html
+ * <Tipo> <Nombre>; esta es una declaración de variable <Tipo> 
+ * <Nombre> = <Valor>; esta es una declaración de variable con asignación de valor
+ * 
+ * */
+
 public class Declaracion {
 
-	/* https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html
-	 * <Tipo> <Nombre>; esta es una declaración de variable <Tipo> 
-	 * <Nombre> = <Valor>; esta es una declaración de variable con asignación de valor
-	 * */
-	
 	int propiedad = 0; //Esta variable es una propiedad de la clase porque no está declarada dentro de un bloque {}
 	
 	/* Las variables de clase son propiedades comunes entre los objetos, que pueden almacenar sus estados, es decir:
