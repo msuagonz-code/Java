@@ -50,7 +50,7 @@ public class Arrays {
 		int[] arrayDeNumeros = {1,2,3,4,5,6};
 		
 		// Para saber el tamaño del array, exite el metodo .length que se usa de la siguiente manera en todos los arrays
-		System.out.println(arrayDeNumeros[0]);
+		System.out.println(arrayDeNumeros[2]);
 
 		/*
 		 * Matrices
