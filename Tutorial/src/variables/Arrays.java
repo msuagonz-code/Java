@@ -4,6 +4,7 @@ package variables;
  * https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html
  * 
  * */
+
 public class Arrays {
 
 	public static void main(String[] args) {
@@ -61,7 +62,13 @@ public class Arrays {
 		 * 							   {4,5,6}
 		 * 						   	 };
 		 * 
-		 * Si las matrices no se declaran 
+		 * Las matrices son arrays que contienen arrays, gracais a esto los arrays miembros del array principal
+		 * pueden variar de longitud ejemplo:
+		 * 
+		 *  int[][] matrizDeNumeros = {
+		 * 							   {1,2,3},
+		 * 							   {4,5}
+		 * 						   	 };
 		 * 
 		 * */
 		
