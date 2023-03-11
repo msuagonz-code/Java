@@ -47,10 +47,11 @@ public class Arrays {
 		arrayNoInicializado[0] = 10;
 		arrayNoInicializado[1] = 20;
 		
+		// El tamaño del array es determinado por la cantidad de valores entre los simbolos { y } serparados por el simbolo coma ','
 		int[] arrayDeNumeros = {1,2,3,4,5,6};
 		
-		// Para saber el tamaño del array, exite el metodo .length que se usa de la siguiente manera en todos los arrays
-		System.out.println(arrayDeNumeros[3]);
+		// Para saber el tamaño del array, existe el metodo .length que se usa de la siguiente manera en todos los arrays
+		System.out.println("Elemento 3: "+ arrayDeNumeros[3]);
 
 		/*
 		 * Matrices
@@ -72,9 +73,11 @@ public class Arrays {
 		 * 
 		 * */
 		
-		 int[][] matrizDeNumeros = { {1,2,3}, {4,5,6} };
+		 int[][] matrizDeNumeros = { {1,2,3}, {4,5,6}, {7,8,9,10}};
+		 System.out.println("length: "+ matrizDeNumeros[2][2]);
 		 
-		 System.out.println(matrizDeNumeros[0][1]);
+		 // Dentro de los arrays existe el metodo .length, que permite obtener la longitud del array
+		 System.out.println("length: "+ matrizDeNumeros.length);
 	}
 
 }
