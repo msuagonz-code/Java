@@ -35,12 +35,53 @@ public class IfElse {
 		 * 
 		 * */
 
-		if( false ) {
+		if( false ){
 			// Este codigo no se ejecuta porque !condicion resulta falso
-		}else {
+		}else{
 			System.err.println("Estoy dentro de un ELSE");
 		}
 
+		/* IF...ELSE IF...ELSE
+		 * Esta estructura provee varias alternativa en caso de que la condición evaluada en el if sea falsa.
+		 * 
+		 * if(condicion){
+		 * 	Codigo;
+		 * }else if(condicion){
+		 * 	Codigo
+		 * }else{
+		 * 	Codigo
+		 * }
+		 * 
+		 * */
+		
+		if( false ){
+			// Este codigo no se ejecuta porque !condicion resulta falso
+		}else if(true){
+			System.err.println("Estoy dentro de un ELSE IF");
+		}else{
+			// Este codigo no se ejecuta porque !condicion resulta falso
+		}
+
+		/*
+		 * Estas estructuras son secuenciales, es decir si se ejecuta el primer if
+		 * no se ejecutarán el resto de las instruccuines
+		 *  
+		 * */
+		
+		if( false ){
+			// Este codigo no se ejecuta porque !condicion resulta falso
+		}else if(false){
+			// Este codigo no se ejecuta porque !condicion resulta falso
+		}else if(false){
+			// Este codigo no se ejecuta porque !condicion resulta falso
+		}else if(true){
+			System.out.println("Estas Estructuras son secuenciales");
+		}else if(false){
+			// Este codigo no se ejecuta porque !condicion resulta falso
+		}else{
+			// Este codigo no se ejecuta porque !condicion resulta falso
+		}
+		
 	}
 
 }
