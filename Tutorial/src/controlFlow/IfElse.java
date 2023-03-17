@@ -26,6 +26,7 @@ public class IfElse {
 		
 		/* IF...ELSE
 		 * Esta estructura provee una alternativa en caso de que la condición evaluada en el if sea falsa.
+		 * como se puede observar, esta estrucutra es opcional.
 		 * 
 		 * if(condicion){
 		 * 	Codigo;
@@ -43,6 +44,7 @@ public class IfElse {
 
 		/* IF...ELSE IF...ELSE
 		 * Esta estructura provee varias alternativa en caso de que la condición evaluada en el if sea falsa.
+		 * esta estrucutra es opcional.
 		 * 
 		 * if(condicion){
 		 * 	Codigo;
