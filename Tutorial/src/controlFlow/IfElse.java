@@ -14,13 +14,13 @@ public class IfElse {
 		 * Le indica al programa que ejecute un bloque de codigo solo si se una condición dada
 		 * es evaluada a true
 		 *  
-		 * if(condicion){
-		 * 	Codigo;
+		 * if (condicion) {
+		 * 		Codigo;
 		 * }
 		 * 
 		 * */
 		
-		if( true ) {
+		if (true) {
 			System.out.println("Estoy dentro de un IF");
 		}
 		
@@ -28,17 +28,17 @@ public class IfElse {
 		 * Esta estructura provee una alternativa en caso de que la condición evaluada en el if sea falsa.
 		 * como se puede observar, esta estrucutra es opcional.
 		 * 
-		 * if(condicion){
-		 * 	Codigo;
-		 * }else{
-		 * 	Codigo
+		 * if (condicion) {
+		 * 		Codigo;
+		 * } else {
+		 * 		Codigo;
 		 * }
 		 * 
 		 * */
 
-		if( false ){
+		if (false) {
 			// Este codigo no se ejecuta porque !condicion resulta falso
-		}else{
+		} else {
 			System.err.println("Estoy dentro de un ELSE");
 		}
 
@@ -46,21 +46,21 @@ public class IfElse {
 		 * Esta estructura provee varias alternativa en caso de que la condición evaluada en el if sea falsa.
 		 * esta estrucutra es opcional.
 		 * 
-		 * if(condicion){
-		 * 	Codigo;
-		 * }else if(condicion){
-		 * 	Codigo
-		 * }else{
-		 * 	Codigo
+		 * if (condicion) {
+		 * 		Codigo;
+		 * } else if (condicion) {
+		 * 		Codigo
+		 * } else {
+		 * 		Codigo;
 		 * }
 		 * 
 		 * */
 		
-		if( false ){
+		if (false) {
 			// Este codigo no se ejecuta porque !condicion resulta falso
-		}else if(true){
+		} else if (true) {
 			System.err.println("Estoy dentro de un ELSE IF");
-		}else{
+		} else {
 			// Este codigo no se ejecuta porque !condicion resulta falso
 		}
 
@@ -70,17 +70,17 @@ public class IfElse {
 		 *  
 		 * */
 		
-		if( false ){
+		if (false) {
 			// Este codigo no se ejecuta porque !condicion resulta falso
-		}else if(false){
+		} else if (false) {
 			// Este codigo no se ejecuta porque !condicion resulta falso
-		}else if(false){
+		} else if (false) {
 			// Este codigo no se ejecuta porque !condicion resulta falso
-		}else if(true){
+		} else if (true) {
 			System.out.println("Estas Estructuras son secuenciales");
-		}else if(false){
+		} else if (false) {
 			// Este codigo no se ejecuta porque !condicion resulta falso
-		}else{
+		} else {
 			// Este codigo no se ejecuta porque !condicion resulta falso
 		}
 		
