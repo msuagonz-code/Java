@@ -53,7 +53,37 @@ public class Switch {
 			System.out.println("Yo me ejecuto si valorEntrada es diferente a los casos");
 			break;
 		}
+		
+		/*
+		 * break no es necesario en la sentencia switch, pero si se omite se ejecutarán todos los casos despues
+		 * posteriores al caso positivo ej:
+		 * 
+		 * */
 
+		switch (valorEntrada) {
+
+		case 1:
+			System.out.println("Yo no me ejecuto :(");
+			
+		case 5:
+			System.out.println("Yo me ejecuto!");
+			
+		case 10:
+			System.out.println("Yo tambien me ejecuto!");
+
+		default:
+			System.out.println("Yo tambien me ejecuto :)");
+
+		}
+		
+		/* 
+		 * además no pueden haber 2 casos iguales o se produce el siguiente error
+		 * 
+		 * Exception in thread "main" java.lang.Error: Unresolved compilation problems: 
+		 * 		Duplicate case
+		 * 
+		 * */
+		
 	}
 
 }
