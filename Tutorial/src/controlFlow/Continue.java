@@ -18,18 +18,18 @@ public class Continue {
 		 * 
 		 * */
 
-//		int[] Array = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
-//
-//		// Continue sin etiqueta
-//		for (int item : Array) {
-//			// numeros pares
-//			if (item % 2 == 0) {
-//				// Esto evita que se ejecute el println en los numero pares
-//				continue;
-//			}
-//			System.out.println(item);
-//		}
-//		
+		int[] Array = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 };
+
+		// Continue sin etiqueta
+		for (int item : Array) {
+			// numeros pares
+			if (item % 2 == 0) {
+				// Esto evita que se ejecute el println en los numero pares
+				continue;
+			}
+			System.out.println(item);
+		}
+		
 		
 		// Continue con etiqueta
 		int[][] nuevoArray = { { 0, 1, 2, 3, 4, 5 }, { 6, 7, 8, 9, 10 }, { 11, 12, 13, 14, 15 } };
