@@ -1,5 +1,7 @@
 package clases;
 
+import clases.Parametros;
+
 /*
  * https://docs.oracle.com/javase/tutorial/java/javaOO/arguments.html
  * */
@@ -43,10 +45,43 @@ public class Argumentos {
 		String arg1 = "Primer Arg";
 		metodo(arg1, 1,2,3,4,5);
 		metodo(arg1);
+		
+		String paramString = "Yo soy un parametro";
+		System.out.println(paramString);
+		
+		Parametros parametro = new Parametros(paramString);
+		System.out.println("Miembro de clase: " + parametro.getMiembro());//Se hace referencia al miembro de la clase
+		
+		/*
+		 * Los argumentos con tipos de datos primitivos, como int, long, double, float, char, short, byte, boolean, 
+		 * se pasan a los metodos por valor, esto quiere decir que las modificaciones realizadas a los argumentos
+		 * dentro de los metodos, solo afectarán el ámbito del metodo y no fuera del ambito
+		 * */
+		int paramEntero = 5;
+		System.out.println("El valor de la variable antes de pasarla al metodo es: "+ paramEntero);
+		parametro.parametroPorValor(paramEntero);
+		System.out.println("El valor de la variable despues de pasarla al metodo es: "+ paramEntero);
+		
+		/*
+		 * En el caso de los argumentos sean tipos de datos de referencia como lo son objetos, arrays, etc
+		 * tambien se pasan por valor, pero el contenido de estos objetos si puede cambiar si se modifican en otro metodo
+		 * 
+		 * en el siguiente ejemplo, vamos a instanciar un objeto, objetoNumerico, el cual almacena 3 variables 
+		 * numericas, estas variables se inicializan a 0 en el constructor al ser instanciadas con new
+		 * 
+		 * al pasar este objeto al metodo, metodoSuma del objeto parametro, se modifican los miembros de la clase
+		 * y este cambio podemos verlo facilmente
+		 *  
+		 * */
+		
+		Objeto objetoNumerico = new Objeto();
+		System.out.println("Los valores de las variables dentro del objeto, antes de pasarlas al metodo son: "+ objetoNumerico.toString());
+		parametro.metodoSuma(objetoNumerico);
+		System.out.println("Los valores de las variables dentro del objeto, despues de pasarlas al metodo son: "+ objetoNumerico.toString());
 	}
 
 	public static void metodo(int parametro) {
-		System.out.println("yo soy un parametro "+ parametro);
+		System.out.println("Yo soy un parametro "+ parametro);
 	}
 	
 	public static void metodo(int[] parametroArray) {
@@ -68,5 +103,7 @@ public class Argumentos {
 		}
 		
 	}
+	
+
 	
 }
